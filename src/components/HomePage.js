@@ -7,6 +7,9 @@ const HomePage = () => {
       <h1>Jenny M&#39;s Longarm Quilting</h1>
 
       <h2>Start Quilting :)</h2>
+      <div>
+    <h2>Longarm Machine Quilting</h2>
+    </div>
     </div>
   );
 };
