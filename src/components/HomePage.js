@@ -7,6 +7,17 @@ const HomePage = () => {
       <h1>Jenny M&#39;s Longarm Quilting</h1>
 
       <h2>Start Quilting :)</h2>
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          Testing Bootstrap
+        </div>
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          Testing Bootstrap
+        </div>
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          Testing Bootstrap
+        </div>
+      </div>
     </div>
   );
 };
