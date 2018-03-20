@@ -4,28 +4,49 @@ $vin-green: #60b044;
 $vin-red: #ff0000;
 
 /* Styles */
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+body{
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
   min-width: 230px;
-  max-width: 550px;
+  padding: 0 55px 0;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-weight: 300;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Work Sans', Helvetica, Arial, sans-serif;
 }
 
-td {
-	padding: 12px;
+/* header */
+.logo {
+	min-height: 94px;
+	padding-top: 30px;
+	padding: 30px 55px 55px 0;
+}
+.logo img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto
 }
 
-h2 {
-	color: $vin-blue;
+/* Nav */
+
+nav a {
+	color:#3d4246;
+}
+nav a:hover {
+	color:rgb(232, 233, 235);
 }
 
 .savings { color: $vin-green; }
 .loss { color: $vin-red; }
 input.small { width: 46px; }
 td.fuel-savings-label { width: 175px; }
+
+/* Containers */
+.containerSpace {
+	margin: 80px 55px;
+}
