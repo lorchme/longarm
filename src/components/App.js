@@ -2,9 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
-import HomePage from './HomePage';
-import QuiltingDetails from './QuiltingDetails';
-import AboutPage from './AboutPage';
+import Layout from './layout/layout';
 import NotFoundPage from './NotFoundPage';
 
 // This is a class-based component because the current
@@ -16,17 +14,8 @@ class App extends React.Component {
     const activeStyle = { color: 'blue' };
     return (
       <div>
-        <div>
-          <NavLink exact to="/" activeStyle={activeStyle}>Home</NavLink>
-          {' | '}
-          <NavLink to="/quilting-details" activeStyle={activeStyle}>Quilting Details</NavLink>
-          {' | '}
-          <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
-        </div>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/quilting-details" component={QuiltingDetails} />
-          <Route path="/about" component={AboutPage} />
+          <Route exact path="/" component={Layout} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>
