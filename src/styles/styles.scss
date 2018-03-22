@@ -6,13 +6,16 @@ $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
 
+.fullWith {
+	background: aqua;
+}
+
 /* Styles */
 body{
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
   min-width: 230px;
-  padding: 0 55px 0;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -44,6 +47,14 @@ nav a:hover {
 	color:rgb(232, 233, 235);
 }
 
+/* Tab Nav */
+
+.titleTab a {
+	font-size: 2em;
+	margin-left: 10px;
+	margin-right: 50px;
+}
+
 .savings { color: $vin-green; }
 .loss { color: $vin-red; }
 input.small { width: 46px; }
@@ -52,4 +63,38 @@ td.fuel-savings-label { width: 175px; }
 /* Containers */
 .containerSpace {
 	margin: 80px 55px;
+}
+
+/* Accordion Card Steps */
+
+.price {
+	color: #ff970d;
+}
+.card {
+	border: none;
+}
+.card-header {
+	background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-bottom: none;
+}
+.card-header .btn-link {
+	color: #000;
+	font-weight: 700;
+}
+.card-header .btn-link:focus, .btn-link:hover {
+	text-decoration: none;
+	color: #4496c2;
+}
+
+.card-body {
+	padding-top: 0;
+}
+
+/* Form Information */
+.formInfo {
+	margin-top: 150px;
+}
+.boldHeadline {
+	font-weight: 700;
 }
